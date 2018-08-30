@@ -18,7 +18,7 @@ ENV PHANTOMJS_VERSION 2.1.1
 
 # Install dependencies
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
-RUN apt-get update -qq && apt-get install -y bundler ruby-rmagick libfreeimage3 wget procps ruby-bundler ruby nodejs
+RUN apt-get update -qq && apt-get install -y build-essential bundler libmariadbclient-dev ruby-rmagick libfreeimage3 wget curl procps cron make nodejs strace
 
 # Install yarn
 RUN npm install -g yarn
